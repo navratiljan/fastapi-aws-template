@@ -11,13 +11,20 @@ spec:
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Fill in some steps
+    - title: Fill in names
       required:
         - nameShort
         - nameLong
       properties:
-        name:
-          title: Name
+        nameShort:
+          title: NameShort
+          type: string
+          description: Unique short name and long name of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+        nameLong:
+          title: NameLong
           type: string
           description: Unique short name and long name of the component
           ui:autofocus: true
