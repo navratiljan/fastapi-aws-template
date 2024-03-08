@@ -13,12 +13,13 @@ spec:
   parameters:
     - title: Fill in some steps
       required:
-        - name
+        - nameShort
+        - nameLong
       properties:
         name:
           title: Name
           type: string
-          description: Unique name of the component
+          description: Unique short name and long name of the component
           ui:autofocus: true
           ui:options:
             rows: 5
